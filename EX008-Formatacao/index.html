@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Formatação de Texto</title>
+  </head>
+  
+<style>
+  mark{
+    background-color: pink;
+  }
+</style><!-- AQUI É PARA ALTERAR A COR DO MARK PARA TODOS OS MARK DA PÁGINA-->
+  <body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b>, usando a tag &lt;b&gt;(não semântica)</p>
+    <p>E nesta frase temos um <strong>termo em destaque</strong>, usando a tag &lt;strong&gt;(semêntica)</p>
+    <h2>Itálico/Ênfase</h2>
+    <p>Nesta frase temos um <i>termo em itálico</i>, usando a tag &lt;i&gt;(não semântica</p>
+    <p>Nesta frase temos um <em>termo enfatizado</em>, usando a tag &lt;em&gt;(semêntica)</p>
+    <p>Abaixo temos uma configuração pra endereço, usando a tag &lt;adress&gt;</p>
+    <p><adress>Rua Belisário Távora 77, ap 206 - Rio de Janeiro/RJ </adress></p>
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar um <mark style="background-color: lime">texto marcado</mark>, usando a tag &lt;mark&gt;</p><!-- style é para mudar a cor da marcação -->
+    <p>Podemos criar <mark>texto marcado</mark> em qualquer lugar.</p>
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big>, usando a tab &lt;big&gt;(não semântica), e um <small>texto pequeno</small>, usando a tag &lt;small&gt;(não semântica)</p>
+    <h2>Texto Excluído</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado</p>
+    <h2>Texto Inserido</h2>
+    <p>Podermos marcar <ins>um texto como inserido</ins> para indicar que ele foi adicionado depois.</p>
+    <p>Existe també a tag &lt;u&gt; para <u>subilhar</u>, mas esta é não semântica</p>
+    <h2>Texto Sobrescrito</h2>
+    <p>Usar a tag &lt;sup&gt; para sobrescrever, como por exemplo na exponenciação X<sup>2</sup>.</p>
+    <h2>Texto Subscrito</h2>
+    <p>Usar a tag &lt;sub&gt; para subescrever, como por exempo na fórmula H<sub>2</sub>O. </p>
+    <hr>
+    <h2>Código-fonte e pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <pre><!-- pre é para considerar os espaçamentos e tabulações dentro do itervalo -->
+      <code>
+  num = int(input('Digite um número'))
+  if num % 2 == 0:
+    print(f'O númeiro {num} é PAR)
+  else:
+    print(f' O númnero {num} é IMPAR)
+  print('Fim do programa')
+      </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q></p>
+    <h2>Citações completas</h2>
+    <p>Segundo Jef Noble, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=0">HTML, XHTML e CSS Para Leigos, revela os detalhes das linguagens de marcação que são a veia da web – a Hypertext Markup Language (HTML) e sua prima, XHTM, junto com a linguagem da Cascading Style Sheet (CSS), usada para fazer com que outras coisas pareçam boas.</blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+  </body>
+</html>

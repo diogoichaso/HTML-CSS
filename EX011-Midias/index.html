@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mídias em HMTL5</title>
+</head>
+<body>
+  <h1>Imagens Dinâmicas</h1>
+  <p>Tente abrir este site em vários dispositivos diferentes ou simplismente 
+    aumente ou diminua o tamanho do navegador.</p>
+<picture><!-- TEM QUE SER NA ORDEM DO MENOR PARA MAIOR -->
+<source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+<source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+  <img src="imagens/foto-g.png" alt="imagem flexível">
+</picture>
+  <h1>Reproduzindo Áudios</h1>
+  <p>Vamos aprender a reproduzir áudios em HTML5</p>
+<audio src="midia/guanacast-33.mp3" controls></audio><br>
+<!-- Formatos compatíveis>: MP3, WAV e OGG -->
+<audio preload="metadata" autoplay controls>
+  <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+  <source src="midia/guanacast-33.OGG" type="audio/OGG">
+  <p>infelizmente seu navegador não pode reproduzir o áudio.<a href="midia/guanacast-33.mp3"> Clique aqui para baixar o arquivo</a></p>
+</audio>
+<hr>
+<h1>Inserindo Vídeos do Youtube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2iaPuUFIyMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr>
+<h1>Inserindo Vídeos Hospedados Localmente</h1>
+<p>Este vídeo está hospedado no próprio servidor</p>
+<!--Do modo abaixo consome muito tráfego de dados: Alto Custo!-->
+<video src="midia/pipoca.mp4" width="500" controls poster="midia/foto-pipoca.jpg"/video>
+
+</body>
+</html>

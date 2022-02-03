@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo-classes</title>
+<style>
+  div{
+    display: inline-block;/*alinhados lado a lado*/
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+    height: 100px;
+    width:200px;
+  }
+
+  div > p{/* p é um filho da div pois esta dentro de uma div*/
+    display: none;
+    color: white;
+  }
+  /* Pseudo-classes se referem ao estado de um objeto */
+  div:hover{/*alterar a cor quando passa o mouse por cima*/
+    color: red;
+  }
+
+div:hover > p{
+  display: block;
+  background-color: red;
+}
+
+</style>
+</head>
+<body>
+  <h1>Exemplo de hover</h1>
+  <p>Passe o mouse sobre o texto abaixo</p>
+  <div>Passe o mouse aqui
+    <p>TEXTO ESCONDIDO....</p>
+  </div>
+  <div>01</div>
+  <div>02</div>
+  <a href="link.html" target="_self" rel="next">Links Personalizados</a>
+</body>
+</html>

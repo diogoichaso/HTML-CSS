@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de Responsividade</title>
+<link rel="stylesheet" href="style.css">
+<!--
+        ============ DICA ==================
+
+        Chrome web store
+        windows resizer para acompanhar a mudança de tamanho de tela
+-->
+<style>
+  body{
+    background-color: gray;
+  }
+
+  main{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    /*USO DA LARGURA MÍNIMA E MÁXIMA TRAZ A RESPONSIVIDADE PARA DIVERSOS TAMANHOS DE TELA*/
+    min-width: 280px; /*Largura máxima de celulares antigos*/
+    max-width: 800px;
+    margin: auto; /*CENTRALIZAR A BOX*/
+  }
+</style>
+</head>
+<body>
+  <Main>
+    <h1>Testando Responsividade</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio labore dolore assumenda placeat impedit nihil vero id nemo non a ut, magnam exercitationem fugit ratione obcaecati ex eaque reprehenderit animi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum commodi adipisci quos, aspernatur ea voluptatum tempora. Suscipit, placeat praesentium nisi soluta aliquam molestias accusantium, ipsa quo eligendi vel pariatur doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam est minus harum, repudiandae ipsam doloribus debitis voluptatum ipsum aspernatur expedita. Tempore blanditiis tempora illo ipsum provident fuga adipisci dolorem itaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione vel, inventore deserunt beatae quas cumque sed, similique consectetur commodi consequatur ipsam perspiciatis ducimus neque eaque veniam necessitatibus aliquid! Reprehenderit, aspernatur?</p>
+    <picture>
+    <source media="(max-width: 600px)" srcset="irina-blok-pq.jpg" >
+      <img src="irina-blok.jpg" alt="Irina Blok">
+    </picture>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio labore dolore assumenda placeat impedit nihil vero id nemo non a ut, magnam exercitationem fugit ratione obcaecati ex eaque reprehenderit animi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum commodi adipisci quos, aspernatur ea voluptatum tempora. Suscipit, placeat praesentium nisi soluta aliquam molestias accusantium, ipsa quo eligendi vel pariatur doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam est minus harum, repudiandae ipsam doloribus debitis voluptatum ipsum aspernatur expedita. Tempore blanditiis tempora illo ipsum provident fuga adipisci dolorem itaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione vel, inventore deserunt beatae quas cumque sed, similique consectetur commodi consequatur ipsam perspiciatis ducimus neque eaque veniam necessitatibus aliquid! Reprehenderit, aspernatur?</p>
+  </Main>
+</body>
+</html>

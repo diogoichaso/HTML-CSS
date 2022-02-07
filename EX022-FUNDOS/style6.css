@@ -1,0 +1,35 @@
+/*REGRAS*/
+@charset "UTF-6=8";
+
+/*SELETORES*/
+body{
+  height: 100vh;/*1005 da viewport*/
+  /*background-color: black;
+  background-image: url(imagens/wallpaper002.jpg);
+  background-position: center center;
+  background-repeat: repeat-y;
+  background-size: cover;/*cobre a tela inteira*/
+  /*contain - imagem 100% exibida*/
+  /*background-attachment: fixed;/*Fixa o plano de fundo enquando o conteúdo rola*/
+  /*background-attachment: scroll = O fundo rola junto com o conteúdo*/
+
+  /*shorthand de background: 
+  background: color image posision repeat size* attachment
+
+  * no manual informa que o size pode ser incluído, mas não funciona com o cover
+  */
+
+  background: black url('imagens/wallpaper002.jpg') center no-repeat fixed;
+  background-size: cover
+
+ 
+}
+
+main{
+  background-color: white;
+  max-width: 600px;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid darkblue;
+  border-radius: 15px;
+}

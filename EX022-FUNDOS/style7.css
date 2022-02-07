@@ -1,0 +1,26 @@
+/*REGRAS*/
+@charset "UTF-8";
+
+/*SELETORES*/
+#container{
+  background-image: url(imagens/target001.png);
+  background-size: 100% 100%;
+  position: relative;/*Posicionamento da caixa externa deve ser relativo*/
+  height: 96vh;
+  background-color: purple;
+  padding: 10px;
+}
+
+#conteudo{
+  background-image: url(imagens/target001.png);
+  background-size: 100% 100%;
+  position: absolute; /*Posicionamento da caixa interna deve ser absoluto para manter o alinahmento*/
+  left: 50%;/*left top é possível pois o posicionamento é absoluto*/
+  top: 50%;
+  /*Left 50% e top 50% vai posicionar o conteúdo (seu canto superior esquerdo) no centro do container*/
+  height: 200px;
+  width: 400px;
+  background-color: yellow;
+
+  transform: translate(-50%, -50%); /*move o conteúdo dentro do container*/
+}

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+  width: 500px;
+  border-collapse: collapse;
+  position: relative/*Para permitir fixar o cabeçalho*/
+}
+
+caption{
+  background-color: lightgray;
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+th, td{
+  border: 1px solid black;
+}
+
+thead, tfoot{
+  background-color: gray;
+  color: white;
+}
+
+thead > tr > th{
+  position: sticky;
+  top: -1px;
+  background-color: gray;
+}
+
+tbody > tr:nth-child(even){/*Efeito zebrado - even=linha par(2n) / odd=linha impar(2n-1)*/
+  background-color: lightgray;
+}
+.num{
+  text-align: right;
+}
+
+#col02{
+  width: 100px;
+}
